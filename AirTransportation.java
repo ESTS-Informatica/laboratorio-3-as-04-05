@@ -49,4 +49,22 @@ public class AirTransportation extends Transport{
         }
     }
 
+    public double getPriceWithFees(){
+        return getFees()*getPrice();
+    }
+    public String getTransportType(){
+        return "Transport Aerio";
+    }
+    
+    public String toString(){
+        return "\nTipo Transporte:"+ getTransportType()+" \n" +
+                "              ID: " + getId() + "\n" +
+                "         Origem: \n" +
+                "        Destino: \n" +
+                "          Preço:  \n" +
+                "     Honorarios: \n" +
+                "    Preço Final: \n" +
+                "           Nome: \n" +
+                "  NºContentores: n";
+    }
 }
