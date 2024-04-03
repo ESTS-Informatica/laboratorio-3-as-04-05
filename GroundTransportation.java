@@ -39,7 +39,9 @@ public class GroundTransportation extends Transport{
     public String getTransportType(){
         return "Transport Terrestre";
     }
-    public String toStrng(){
+    
+    @Override
+    public String toString(){
         return super.toString() + "   Preço Final:"+getPriceWithFees()+"\n" +
                           "      Matricula:"+licensePlate+ "\n";
     }
