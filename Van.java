@@ -19,10 +19,12 @@ public class Van extends GroundTransportation{
            this.numberOfPackages = 0;
        }
     }
+    
     public int getNumberOfPackages(){
         return numberOfPackages;
 
     }
+    
     public void setNumberOfPackages(int newNumber){
         if(newNumber>=0){
            this.numberOfPackages = newNumber;
